@@ -1,0 +1,14 @@
+[
+  {
+    "name": "sampleOrg1Collection",
+    "policy": "OR('org1.member', 'org2.member')",
+    "requiredPeerCount": 0,
+    "maxPeerCount": 1,
+    "blockToLive": 0,
+    "memberOnlyRead": true,
+    "memberOnlyWrite": false,
+    "endorsementPolicy": {
+      "signaturePolicy": "OR('org1.member', 'org2.member')"
+    }
+  }
+]

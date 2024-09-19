@@ -43,6 +43,7 @@ printf "\n%s%s  Communication secured successfully\n" "$normal" "$green"
 printf "%s.........." "$normal"
 # Developing Rich Data Chaincode (Go Lang)
 printf "\n%s# Developing Rich Data Chaincode (Golang): ********************" "$bold"
+cp ../chaincode/deployment/collection-config.json vars/
 sleep 5
 printf "\n%s%s  Chaincode development completed successfully\n" "$normal" "$green"
 printf "%s................" "$normal"
