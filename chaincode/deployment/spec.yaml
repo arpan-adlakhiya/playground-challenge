@@ -1,12 +1,12 @@
 fabric:
   cas:
-  - "ca1.bank"
-  - "ca1.investment"
-  - "ca1.clearing"
+  - "ca1.org1"
+  - "ca1.org2"
+  - "ca1.org3"
   peers: 
-  - "peer0.bank"
-  - "peer0.investment"
-  - "peer0.clearing"
+  - "peer0.org1"
+  - "peer0.org2"
+  - "peer0.org3"
   orderers:
   - "orderer0.orderer"
   settings:
