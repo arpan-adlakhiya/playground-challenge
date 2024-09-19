@@ -11,3 +11,18 @@ fi
 
 # Query a transaction
 ./minifab invoke -o org1 -n "$CC_NAME" -p '"SampleQuery","param1"'
+
+# Rich query
+curl -X POST http://admin:password@localhost:5984/mychannel/_find -H "Content-Type: application/json" -d '
+{
+  "selector": {
+    "owner": "JohnDoe",
+    "status": "active"
+  },
+  "fields": ["asset_id", "owner", "status", "value"],
+  "sort": [
+    {
+      "value": "asc"
+    }
+  ]
+}'
